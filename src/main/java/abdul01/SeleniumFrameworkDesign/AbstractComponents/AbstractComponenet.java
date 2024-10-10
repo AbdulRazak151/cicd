@@ -31,6 +31,7 @@ public AbstractComponenet(WebDriver driver) {
 public void waitForElementToAppear(By findBy ) {
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(50));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+	System.out.println("hi");
 }
 public void waitForWebElementToAppear(WebElement findBy ) {
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(50));
